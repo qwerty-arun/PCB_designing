@@ -1,0 +1,16 @@
+# Reference: [YT tutorial](https://www.youtube.com/watch?v=S_p0YV-JlfU&list=PLXvLToQzgzdehgGIB_mJdwagVTa91w8_s&index=2&t=2725s)
+# Here are all the learnings so far:
+- [Espressif](https://www.espressif.com/en/products/socs/esp32)
+- [Data Sheet](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf)
+- [All documents](https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32/esp32-devkitc/index.html)
+- [Schematics 1](https://dl.espressif.com/dl/schematics/esp32_devkitc_v4_sch.pdf)
+- [Schematics 2](https://dl.espressif.com/dl/schematics/ESP32-S2-DevKitM-1_V1_Schematics.pdf)
+- [Part: ESP 32 Module](https://www.lcsc.com/product-detail/WiFi-Modules_Espressif-Systems-ESP32-WROOM-32E-N8_C701342.html)
+- [UART related](https://www.lcsc.com/product-detail/USB-Converters_SKYWORKS-SILICON-LABS-CP2102N-A02-GQFN28R_C964632.html)
+- [Regulator](https://www.lcsc.com/product-detail/Voltage-Regulators-Linear-Low-Drop-Out-LDO-Regulators_UMW-Youtai-Semiconductor-Co-Ltd-AMS1117-3-3_C347222.html)  We want more current so, we choose 1A. 
+- [usb connector](https://www.lcsc.com/product-detail/span-style-background-color-ff0-USB-span-Connectors_MOLEX-1050170001_C136000.html).
+- Diodes:LESD5D5.0CT1G
+- Transistors: SS8050-G
+- Choose manufactures such that they have more parts in stock.
+- Switches: Tactile switches: C&K: smd,6x6 : PTS645SL13SMTR92LFS
+- Capacitors: Multilayer Ceramic Capacitors: Samsung: 0402: 10nF: Basic Part
