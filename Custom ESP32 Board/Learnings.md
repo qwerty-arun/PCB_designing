@@ -14,3 +14,11 @@
 - Choose manufactures such that they have more parts in stock.
 - Switches: Tactile switches: C&K: smd,6x6 : PTS645SL13SMTR92LFS
 - Capacitors: Multilayer Ceramic Capacitors: Samsung: 0402: 10nF: Basic Part
+- Often values in the schematics might be wrong, so do check the datasheet to see what manufacturers recommend. This is a good way to make sure you don't design the circuit the wrong way.
+- Resistors: Chip Resistors: uni-royal : 0402
+- You can copy the manufacturer no and paste it in the library, change the numbers and get a part of different value.
+- 5.1k seems to be good enough for enough current to pass through LED.
+- Basic parts are cheaper for assembly.
+- If snap mode is off for some reason, turn it on immediately.
+- Labelling all the pins of the ESP32 Board done.
+- NC: No connection. 
