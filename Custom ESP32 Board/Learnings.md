@@ -27,4 +27,4 @@
 - What are decoupling capacitors?
 - Just in case you need some filtering, add a capacitor.
 - Refer to datasheets for types of pins, they may be I, O or even I/O. So make sure you always cross check. Sometimes, it won't be mentioned in schematics.
-- Using jumpers, pin headers. Why though?
+- Using jumpers, pin headers. Why though? So that we get direct supply of external 5V.
