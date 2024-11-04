@@ -21,4 +21,10 @@
 - Basic parts are cheaper for assembly.
 - If snap mode is off for some reason, turn it on immediately.
 - Labelling all the pins of the ESP32 Board done.
-- NC: No connection. 
+- NC: No connection.
+- NF: Not fitted (my convention).
+- For labels too, make it a habit that you mention what voltages you will be using.
+- What are decoupling capacitors?
+- Just in case you need some filtering, add a capacitor.
+- Refer to datasheets for types of pins, they may be I, O or even I/O. So make sure you always cross check. Sometimes, it won't be mentioned in schematics.
+- Using jumpers, pin headers. Why though?
