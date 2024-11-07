@@ -28,3 +28,11 @@
 - Just in case you need some filtering, add a capacitor.
 - Refer to datasheets for types of pins, they may be I, O or even I/O. So make sure you always cross check. Sometimes, it won't be mentioned in schematics.
 - Using jumpers, pin headers. Why though? So that we get direct supply of external 5V.
+- The whole point of the pin header is to make it easy to switch bewteen different power supplies using a jumper.
+- Adding a small resistance -> Series termination, it can be helpful to minimise reflections and improve quality of signal. The reason is, in our application, the signal is splitting to different places.
+- Idea of filtering the power source.
+- Comparision of ESP32 with S2 reference schematic.
+- [cp2102n errata: problem with silicon](https://www.silabs.com/documents/public/errata/cp2102n-errata.pdf)
+- Addition of transistors.
+- We added a 2 pin header, it won't be fitted but can be used for short circuiting and use this circuit by ourselves manually by adding a GPIO23 pin.
+- Adding titles to each circuit block makes the schematic a lot more professional.
