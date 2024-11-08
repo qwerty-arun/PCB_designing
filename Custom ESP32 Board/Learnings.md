@@ -50,3 +50,4 @@
 - While watching any tutorial, make sure you see X-position and Y-position, not the mouse position. Because the X and Y positions refer to the centre of the part and its easier to refer to it.
 - USB to UART chip's pin 1 to be on the bottom right corner.
 - Cross probe and place directly on to the PCB, so that you don't waste time finding the part.
+- Know where parts are placed in the schematic, similary place the components on the PCB. Ex: A capacitor is connected a voltage source in the schematic, so place that capacitor near the voltage pin.
