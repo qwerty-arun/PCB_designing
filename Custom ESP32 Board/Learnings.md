@@ -1,5 +1,6 @@
 # Reference: [YT tutorial](https://www.youtube.com/watch?v=S_p0YV-JlfU&list=PLXvLToQzgzdehgGIB_mJdwagVTa91w8_s&index=2&t=2725s)
 # Here are all the learnings so far:
+## Schematic
 - [Espressif](https://www.espressif.com/en/products/socs/esp32)
 - [Data Sheet](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf)
 - [All documents](https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32/esp32-devkitc/index.html)
@@ -36,3 +37,16 @@
 - Addition of transistors.
 - We added a 2 pin header, it won't be fitted but can be used for short circuiting and use this circuit by ourselves manually by adding a GPIO23 pin.
 - Adding titles to each circuit block makes the schematic a lot more professional.
+- Reset annotations, add annotations to some parts manually. Then keep the existing annotations and then annotate other parts so that we don't need to annotate manually.
+- Place the not connected flags on the pins that you don't use.
+- You will get multiple errors saying that a wire has multiple net labels. How to fix that? Well, I just went ahead with PCB designing.
+## PCB Designing
+- You can change the board outline however you want. Starting point: x=1000, y=1000, width=2500, height=800.
+- Units changed to mil.
+- 100 mil grid size and snap size of 5.
+- Parts being placed on bottom layer: header pins.
+- ESP module placed on the top layer.
+- You can measure the distance between parts too, so that you make sure you have placed the parts correctly.
+- While watching any tutorial, make sure you see X-position and Y-position, not the mouse position. Because the X and Y positions refer to the centre of the part and its easier to refer to it.
+- USB to UART chip's pin 1 to be on the bottom right corner.
+- Cross probe and place directly on to the PCB, so that you don't waste time finding the part.
