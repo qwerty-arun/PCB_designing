@@ -53,3 +53,7 @@
 - Know where parts are placed in the schematic, similary place the components on the PCB. Ex: A capacitor is connected a voltage source in the schematic, so place that capacitor near the voltage pin.
 - Two labels of the resistors which I placed have the labels (gnd and gnd) on them. Even though the connections are proper in the schematic, why is it like this? Is is wrong?
 - For 5_ext volts external supply, it is correct, but for 3V it is wrong. Is +3V3 shorted somewhere?
+- Well, you need to update PCB in desgin tab. Only then changes will be reflected on to the PCB. Only saving files won't work.
+- No space on the top layer? Place on the bottom layer and close to where the part is connected.
+- No stubs: It helps the quality of the signal
+- While editing in bottom layer, the parts should also be in bottom layer configuration. Just remember this, or else you will end up placing the part on top layer.
