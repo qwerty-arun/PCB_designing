@@ -51,3 +51,5 @@
 - USB to UART chip's pin 1 to be on the bottom right corner.
 - Cross probe and place directly on to the PCB, so that you don't waste time finding the part.
 - Know where parts are placed in the schematic, similary place the components on the PCB. Ex: A capacitor is connected a voltage source in the schematic, so place that capacitor near the voltage pin.
+- Two labels of the resistors which I placed have the labels (gnd and gnd) on them. Even though the connections are proper in the schematic, why is it like this? Is is wrong?
+- For 5_ext volts external supply, it is correct, but for 3V it is wrong. Is +3V3 shorted somewhere?
