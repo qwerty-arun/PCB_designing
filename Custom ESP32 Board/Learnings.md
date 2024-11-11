@@ -57,3 +57,14 @@
 - No space on the top layer? Place on the bottom layer and close to where the part is connected.
 - No stubs: It helps the quality of the signal
 - While editing in bottom layer, the parts should also be in bottom layer configuration. Just remember this, or else you will end up placing the part on top layer.
+- While designing the PCB, we also need to check the manufacturer's capabilities.
+- [JLCPCB capabilites](https://jlcpcb.com/capabilities/pcb-capabilities)
+- Things to check: minimum via hole size.
+- We added 2 more layers, now in total: 4. You can change in Layer manager.
+- One layer connected to +3V3 and another to gnd.
+- Placed vias for the entire ESP32 Module.
+- For tracks, if there isn't enough space, you can add a via and then continue on bottom layer.
+- Connected all pins of ESP32 to header pins.
+- A cross mark of yellow color indicate there is something wrong with tracing and it is too close to a component or even overlapping.
+- We can even add custom coloring to labels so that we can easily identify gnd, voltage sources etc. This is so useful!!!!
+- Place ground vias before itself so that later, you don't have to reroute your tracks.
