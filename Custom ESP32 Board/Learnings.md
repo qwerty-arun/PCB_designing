@@ -68,3 +68,5 @@
 - A cross mark of yellow color indicate there is something wrong with tracing and it is too close to a component or even overlapping.
 - We can even add custom coloring to labels so that we can easily identify gnd, voltage sources etc. This is so useful!!!!
 - Place ground vias before itself so that later, you don't have to reroute your tracks.
+- Rerouting the tracks is a pain.
+- At an intersection a label was accidently placed on ground whereas it should have been placed on RXD0. 
