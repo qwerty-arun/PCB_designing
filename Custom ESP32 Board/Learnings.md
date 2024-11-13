@@ -69,4 +69,10 @@
 - We can even add custom coloring to labels so that we can easily identify gnd, voltage sources etc. This is so useful!!!!
 - Place ground vias before itself so that later, you don't have to reroute your tracks.
 - Rerouting the tracks is a pain.
-- At an intersection a label was accidently placed on ground whereas it should have been placed on RXD0. 
+- At an intersection a label was accidently placed on ground whereas it should have been placed on RXD0.
+- Pins of USB connector were very close, so routing was not possible.
+- Change the clearance from 10 to 8 mil in design tab->design rule. This way you will be able to route with more than enough track width.
+- Don't forget to change the clearance back to 10 mil. We want the rest of the board to have 10 mil clearance.
+- Press spacebar to rotate the suggested orientation of the track.
+- Most of the times, try placing the vias on the same level. So that routing becomes easier.
+- Sometimes one via is not enough, multiple vias may be need for power.
