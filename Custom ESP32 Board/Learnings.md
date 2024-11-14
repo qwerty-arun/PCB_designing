@@ -76,3 +76,11 @@
 - Press spacebar to rotate the suggested orientation of the track.
 - Most of the times, try placing the vias on the same level. So that routing becomes easier.
 - Sometimes one via is not enough, multiple vias may be need for power.
+## Updating PCB
+- Also update tracks net option should be checked. It should be selected.
+- If you have ever forgotten and connections, look out for thin blue lines which indicate they need to be connected.
+- Search for USB impedance. It is recommended to use 90 ohm differential pair impedance for USB tracks.
+- Search for JLCPCB Stackup. [Website](https://jlcpcb.com/impedance)
+- 3313, 1.6 mm, differential, 4layer, trace space is 4.
+- [Impedance Calculator](https://jlcpcb.com/pcb-impedance-calculator)
+- Addition of a new rule for our benefit.
