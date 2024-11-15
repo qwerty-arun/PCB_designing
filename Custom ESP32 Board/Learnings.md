@@ -84,3 +84,7 @@
 - 3313, 1.6 mm, differential, 4layer, trace space is 4.
 - [Impedance Calculator](https://jlcpcb.com/pcb-impedance-calculator)
 - Addition of a new rule for our benefit.
+- You can select for which pins they apply to.
+- Why is it good to use vias for all the ground connections.
+- Before checking DRC, adjust the design of clearance from 10 mil to 8 mil.
+- Got from 50 DRC Errors to just 8. More than this, its almost impossible to correct the remaining.
