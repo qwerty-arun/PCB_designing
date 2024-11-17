@@ -16,3 +16,8 @@
 - NRST: negate reset pin, if low, it will put the microcontroller in reset mode, if high, makes sure the microcontroller runs the software that's flashed to it. It contains an internal pull up resistor, so we can leave it floating. We can add an external switch if we want to manually control.
 - If you don't want to use the NRST pin, use a 100nF capacitor (decouping), to prevent spurious resets.
 - BOOT0: enables or disables the internal bootloader of the STM32 board.
+- ST-Link Debugger: Main way to program the Microcontroller. Connect one side to your host computer via USB and other side via serial wire debug to the microcontroller.
+- This case requires us to use the USB of the chip. Making the BOOT0 pin high enables interfaces such as UART or USB or I2C. Because we want to flash programs via USB to this device.
+- We just use a switch: SPDT, single pole dual throw switch.
+- We can use `x` or `y` keys to flip symbols.
+- [STM32IDE](https://www.st.com/en/development-tools/stm32cubeide.html)
