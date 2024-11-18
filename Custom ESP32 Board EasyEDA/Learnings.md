@@ -88,3 +88,11 @@
 - Why is it good to use vias for all the ground connections.
 - Before checking DRC, adjust the design of clearance from 10 mil to 8 mil.
 - Got from 50 DRC Errors to just 8. More than this, its almost impossible to correct the remaining.
+## DRC Checks
+- Got to zero DRC errors.
+- Had to remove some vias.
+## Drawing Polygons
+- First we drew a polygon for ground connections.
+- Pad Connection: Direct
+- Rebuild copper area updates the polygon shape if changed not refresh or save file.
+- Drew polygons for few: +3V3, GND and +5V.
