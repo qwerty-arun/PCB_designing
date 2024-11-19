@@ -96,3 +96,22 @@
 - Pad Connection: Direct
 - Rebuild copper area updates the polygon shape if changed not refresh or save file.
 - Drew polygons for few: +3V3, GND and +5V.
+## Standard Impedance
+- 50 ohms seems to be standard and using the impedance calculator, it turns out, 6 mil should be the track width.
+- Generally, power and ground tracks require larger track widths. So we chose 21 mil here.
+- Transistors are thin, so we use 12 mil there.
+## Adding Text
+- Be sure to add text only on Top Silk Layer.
+- Add pin no.s in some places so that it's easier to know where the starting point is.
+- Solid regions after every 5 header pin slots will help a lot!
+- This should be done on Top Silk Layer.
+- Adding product name, company name, some ads.
+## Manufacturing
+- Generated Gerber file.
+- WinRAR zip files work.
+- 25 pieces cost 2200 rupees.
+- 50: 2500 and so on
+- Impedance control: 3313
+- Ordering of layers
+- Generation of BOM
+- Export Pick and Place file
