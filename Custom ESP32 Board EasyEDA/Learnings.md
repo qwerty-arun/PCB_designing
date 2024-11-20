@@ -113,5 +113,20 @@
 - 50: 2500 and so on
 - Impedance control: 3313
 - Ordering of layers
-- Generation of BOM
+- Generation of BOM and saving as CSV files
 - Export Pick and Place file
+- Enable the assembly, assemble only on the top side.
+- Confirm parts placement.
+- Upload the BOM and pick and place file.
+- Make sure every part is in stock and proceed.
+- For components which are not fitted, remove them from the BOM and order them on `Farnell` or `DigiKey`
+## After Receiving
+- Check for any short circuit
+- Check anode and cathode of LEDs
+- Check with multimeter, the resistance of power rails, it must not be short circuit.
+- Download Arduino software.
+- [ESP 32 Tutorial](https://dronebotworkshop.com/esp32-intro/)
+- Tools->Board->ESP32 Dev Module
+- Device Manager->Connect the board with USB, then check which COM.
+- A simple LED program
+- A complex WiFi example. We will be able to control LED with a website!
