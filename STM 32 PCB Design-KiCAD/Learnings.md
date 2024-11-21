@@ -21,3 +21,16 @@
 - We just use a switch: SPDT, single pole dual throw switch.
 - We can use `x` or `y` keys to flip symbols.
 - [STM32IDE](https://www.st.com/en/development-tools/stm32cubeide.html)
+- Done Downloading STM32IDE
+## STM32IDE Software
+- Start a new STM32 Project
+- Select the MCU/MPU Selector. Just select the part no which in our case is STM32F103C8. It provides a description of the board itself which is helpful when we are selecting boards.
+- Add a new name for the project, it shows the pinout diagram. You can configure pins as you like.
+- You can refer to datasheets, but at this stage, not adviced.
+- Go to the left side on categories tab: System Core-> SYS->Debug->Serial Wire.
+- This enables PA13: Serial wire input and output pin as well as PA14: Serial Wire Clock pin
+- Trace Asynchronous is used for monitoring live variables.
+- RCC: Select the high speed clock which aids in timing when we use uart.
+- Connectivity-> USB. This enables PA12 and PA11 which is the USB differential pair.
+- MiddleWare-> USB
+- Clock Config: You can input the crystal frequency.
