@@ -34,3 +34,12 @@
 - Connectivity-> USB. This enables PA12 and PA11 which is the USB differential pair.
 - MiddleWare-> USB
 - Clock Config: You can input the crystal frequency.
+- PD0 and PD1 are pins for the oscillator.
+- After configuration in IDE, transfer the pins on to KiCAD
+## Crystal Circuitry
+- KiCAD automatically detects the USB differential pair only if the pins end with `+` and `-` and also the names should be different before that.
+- Crystals typically come in 4 pins: we choose crystal_gnd24
+- A very important datasheet: Application note of [AN2867](https://www.st.com/resource/en/application_note/an2867-guidelines-for-oscillator-design-on-stm8afals-and-stm32-mcusmpus-stmicroelectronics.pdf) which is an oscillator design guide for STM32.
+- Page 11: Oscillatory circuitry.
+- The load capacitors will have same values and see the recommended values in datasheet
+- In the clock config of IDE, the max frequency was 16MHz, so the cap's value=10pF
