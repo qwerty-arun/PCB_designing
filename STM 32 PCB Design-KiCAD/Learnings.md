@@ -43,3 +43,25 @@
 - Page 11: Oscillatory circuitry.
 - The load capacitors will have same values and see the recommended values in datasheet
 - In the clock config of IDE, the max frequency was 16MHz, so the cap's value=10pF
+- Calculation of load capacitance: 10pF-5pF and then multiply by 2 which is again 10pF. Here, 5pF is the stray capacitance.
+## USB
+- We will be using USB-B-Micro
+- Pressing `q` will bring no connection flag
+- Shield will not be connected
+- ID pin is typically used when we are switching between host and device modes
+- Application note of [AN4879](https://www.st.com/resource/en/application_note/an4879-introduction-to-usb-hardware-and-pcb-guidelines-using-stm32-mcus-stmicroelectronics.pdf)
+- We need a pull up resistor of 1.5k Ohms
+- Don't type in 1.5k, type `1k5` so that it's easier to read
+## Power supply and connections
+### Serial Wire Debug
+- We use 1 column and 4 row pin
+- Pin 1 is connected to 3.3V
+- Pin 4 to gnd
+- Pin 2 to Serial wire Debug IO pin
+- Pin 3 to Clock
+- We will be using a linear regulator, not a switching one because this board is low power and we want something that just works. So AMS 1117-3.3
+- Linear regulators always require input and output capacitors for stability. [Datasheet](https://www.alldatasheet.com/datasheet-pdf/view/49118/ADMOS/AMS1117.html)
+- These capacitors are called bypass capacitors or decoupling capacitors
+- VBUS coming from the USB are actually very noisy, so we need additional filtering, the current capacitor will do nothing. But for simplicity, we will add nothing
+- When working with power rails, make sure you add LEDs and a limiting resitor.
+- Since we are already using 1.5k resitor, to reduce the BOM, use this itself. 
