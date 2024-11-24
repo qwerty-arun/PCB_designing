@@ -64,4 +64,20 @@
 - These capacitors are called bypass capacitors or decoupling capacitors
 - VBUS coming from the USB are actually very noisy, so we need additional filtering, the current capacitor will do nothing. But for simplicity, we will add nothing
 - When working with power rails, make sure you add LEDs and a limiting resitor.
-- Since we are already using 1.5k resitor, to reduce the BOM, use this itself. 
+- Since we are already using 1.5k resitor, to reduce the BOM, use this itself.
+- Go back to STM32IDE, hover over the USART pin, enable it, it seems like it is too close to the USB pins, so Ctrl click them to see where else you can place them.
+- Configured I2C2 too as I2C1 was close to USART1
+- Rest of the pins have the no connect flag on them
+- We will be using the same pin connectors which we used for USB for USART and I2C.
+- USART is fine, but for I2C, they need pull up resistors.
+- Typically for I2C at high speed like 400kHz, we use 2.2kHz but since we are using 1.5kHz, we will just go with that.
+## Annotations
+- Add a rectangular block for both the linear regulator circuitry and microcontroller circuitry.
+- Fill the Title block by clicking on page settings.
+- Go to annotate schematic option and reset the current annotations, then click on annotate.
+- This depends on alignment of the parts, so you might wanna do it manually.
+- We need to add footprints now.
+## Footprints
+- Symbols are the entities that live on the schematics and footprints are the entities that correspond to the symbols that live on the PCB.
+- Before that we have to check electrical rules check.
+- We got one error regarding the +3.3VA flag. KiCAD doesn't know whether it is a input or an output, thus the error. To get rid of it, we use a power flag. 
