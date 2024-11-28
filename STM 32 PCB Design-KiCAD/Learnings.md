@@ -80,4 +80,15 @@
 ## Footprints
 - Symbols are the entities that live on the schematics and footprints are the entities that correspond to the symbols that live on the PCB.
 - Before that we have to check electrical rules check.
-- We got one error regarding the +3.3VA flag. KiCAD doesn't know whether it is a input or an output, thus the error. To get rid of it, we use a power flag. 
+- We got one error regarding the +3.3VA flag. KiCAD doesn't know whether it is a input or an output, thus the error. To get rid of it, we use a power flag.
+## Assigning Footprints
+- We can create our own or just download from the internet.
+- For bigger SMD components select larger size footprints. For now since capacitor's value is small, stick with 0402 and 0603.
+## PCB Set-up
+- For our board, two layers are sufficient.
+- Go to board set up option on the top left.
+- For a two layer board, typically you use the top layer for signal and bottom layer for ground plane.
+- Our typical board thickness will be 1.6mm
+- In constraints section, choose your manufacturer and add the capabilities.
+- For pre-defined sizes, track widths: 0.3 mm and 0.5 mm for power routing.
+- Via Diameter: 0.7mm and Hole: 0.3 mm
