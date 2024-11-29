@@ -92,3 +92,22 @@
 - In constraints section, choose your manufacturer and add the capabilities.
 - For pre-defined sizes, track widths: 0.3 mm and 0.5 mm for power routing.
 - Via Diameter: 0.7mm and Hole: 0.3 mm
+## PCB Design
+- Hide the fabrication layers (both front and back)
+- If you have a monitor, split the screen in half such that left side, it is the schematic and the right side it is the PCB design.
+- Orientation of the components make the routing task so easy, so do it smartly.
+- By adding more traces, the capacitance value to a capacitor will decrease.
+- Place the components wisely, the decoupling capacitors of the analog section have been placed such that very little routing is required later.
+- Always start with sensitive circuitry like the decoupling capacitors, crystal oscillatary circuit.
+- Using the rats nets (the thin lines which tell you to make the connections according to the schematic), you can place the component pretty accurately.
+- You will atleast know where to place the components on the PCB.
+- Ctrl+Shift+m will give the measuring ruler.
+- For a pull up resistor for example, try to place it in line with the other two connections so that we have very little routing.
+- Keep seeing the 3D view of your PCB. It helps because, it gives an idea about enclosure size.
+- In our case, we have a few problems, the switch footprint is huge compared to other components.
+- Also the USB connector is not showing up.
+- You can change the footprint pretty easily, double click on the switch in the schematic, select the footprint option and then choose the right one.
+- For the USB connector, 3D model, we have to add, it is readily available. Copy the manufacturers number, paste in the official website, download the stp file.
+- Place it in the folder you are working in. Double click on the USB connector on the PDB design layout, go to 3D models, delete the existing ones, select the one which you just downloaded.
+- The offsets and rotation might not be right, so you have to try out yourself by trial and error.
+- When you go back to 3D view, now the 3d model of the USB connector will be visible. That's how you fix, 3D model issue.
