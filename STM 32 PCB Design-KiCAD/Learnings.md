@@ -111,3 +111,6 @@
 - Place it in the folder you are working in. Double click on the USB connector on the PDB design layout, go to 3D models, delete the existing ones, select the one which you just downloaded.
 - The offsets and rotation might not be right, so you have to try out yourself by trial and error.
 - When you go back to 3D view, now the 3d model of the USB connector will be visible. That's how you fix, 3D model issue.
+- For this PCB, the board size after rearranging will be 25x35mm
+- Move all the mounting holes to Fabrication layers.
+- Drawing the outline for the PCB. Using the line and arc tools for rounded edges.
