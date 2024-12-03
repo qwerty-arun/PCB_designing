@@ -120,4 +120,12 @@
 - Finish the critical circuitry first: oscillator circuitry and USB.
 - For 2 layer board, start with ground plane on the bottom: whole copper plane tied to the ground net to provide a stable low impedance reference for the signal on top
 - Adding a filled zone: On the bottom layer, select the filled zone type, Gnd, 0.3 mm clearance, 0.25 min width, pad connections: thermal reliefs, thermal relief gap: 0.5 mm and thermal spoke width: 0.5 mm. This helps in soldering the connectors.
-- Around the outline of the board, draw the filled zone shape. Press 'b' to build. 
+- Around the outline of the board, draw the filled zone shape. Press 'b' to build.
+- You can autoroute differential pair, this makes the routing look neat.
+- Place vias near all ground connections. Don't place them on any silkscreen.
+- We added a copper plane connection for some grounds.
+- You can jump wires as you can but minimise the use as much as possible. While routing place a via an then route underneath.
+- There we some minor errors, fixed them.
+## Manufacturing
+- Generate the Bill of materials, position file, gerber file and drill file.
+- Check your gerber files using the gerber viewer option.
