@@ -114,3 +114,10 @@
 - For this PCB, the board size after rearranging will be 25x35mm
 - Move all the mounting holes to Fabrication layers.
 - Drawing the outline for the PCB. Using the line and arc tools for rounded edges.
+- Some text to be printed on the PCB board was hanging out, so you have to edit the footprint and delete the stuff.
+- Place the connectors pretty close to the edge of the board.
+## Routing
+- Finish the critical circuitry first: oscillator circuitry and USB.
+- For 2 layer board, start with ground plane on the bottom: whole copper plane tied to the ground net to provide a stable low impedance reference for the signal on top
+- Adding a filled zone: On the bottom layer, select the filled zone type, Gnd, 0.3 mm clearance, 0.25 min width, pad connections: thermal reliefs, thermal relief gap: 0.5 mm and thermal spoke width: 0.5 mm. This helps in soldering the connectors.
+- Around the outline of the board, draw the filled zone shape. Press 'b' to build. 
