@@ -8,4 +8,18 @@
 - [STM32L432KB](https://www.st.com/resource/en/datasheet/stm32l432kc.pdf): Low power MC, running at 80MHz
 - Instead of a PCB, the author went for a SMA connector, in which it is possible to connect various types of passive 2.4GHz antennas. SMA: SubMiniature version A
 - Two LEDs on board, one for RX and the other for TX, which is a good indicator
-- SPI is chose with a mode of full duplex master, some extra GPIO pins, USB pins, that's how the pinout will look like. 
+- SPI is chose with a mode of full duplex master, some extra GPIO pins, USB pins, that's how the pinout will look like.
+# Power Section
+- USB has a 5V connection to it, but we need 3V to drive the processor and the transciever
+- USB requires exactly 3.3V for operation according to the datasheet
+- Max value of decoupling capacitors should not be more than 10u, otherwise when the board is turned, the in-rush current will be too high which won't be good.
+- Generally good to put a reverse polarity protection, but here we are using USB connector, so chances are very low.
+- [XC2606P322MR Datasheet](https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2109092030_Torex-Semicon-XC6206P282MR-G_C2891263.pdf)
+
+# MCU 
+- [STM32 datasheet](https://www.st.com/content/ccc/resource/technical/document/datasheet/24/01/9f/59/f0/83/47/fc/DM00257205.pdf/files/DM00257205.pdf/jcr:content/translations/en.DM00257205.pdf)
+- 3 decoupling capacitor each for a vdd pin and a bulk capacitor nearby
+- Boot pin determines if boot loader is started or not, and is pulled low in our case.
+- We will be programming with SWD and not via the USB/UART. Set high if you are using them.
+- We used 2 LEDs with current limiting resistors.
+- Calculation: 3.3 V max voltage at GPIO when high, R = (3.3 - 1.8)/1mA, where 1.8V is the drop across LED, 1mA chosen according to datasheet.
