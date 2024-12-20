@@ -23,3 +23,17 @@
 - We will be programming with SWD and not via the USB/UART. Set high if you are using them.
 - We used 2 LEDs with current limiting resistors.
 - Calculation: 3.3 V max voltage at GPIO when high, R = (3.3 - 1.8)/1mA, where 1.8V is the drop across LED, 1mA chosen according to datasheet.
+# SWD (Serial-Wire-Debug Connector)
+- Arm pin 10 swd
+- Copy that pin-out over to that schematic and that will fit with the st-link adapter.
+- Go to Github and see the raw file, you can literally see what connections are made in the schematic
+- That's how I found out what conector to use for the SWD
+- It was 2x5 connector pin: Conn_02x05_Odd_Even
+- The capacitor attached to NRST is a debouncing capacitor
+- If someone touches the pin with their hand, it might reset the device, it protects against that
+# USB Connection and ESD Protection
+- We humans carry a lot of static charges, so this little chip protects this while we are plugging USB
+- Shield pin of USB is not connected here for following reasons: Shield is grounded at the host side (PC)
+# Transciever Section
+- [nRF24L01p](https://www.sparkfun.com/datasheets/Components/nRF24L01_prelim_prod_spec_1_2.pdf)
+- Check out the application example, section it in the schematic to make it look a little bit nicer.
