@@ -37,3 +37,16 @@
 # Transciever Section
 - [nRF24L01p](https://www.sparkfun.com/datasheets/Components/nRF24L01_prelim_prod_spec_1_2.pdf)
 - Check out the application example, section it in the schematic to make it look a little bit nicer.
+- Done with the sectioning and labeling
+# Transceiver Crystal
+- Calculation of load and stray capacitance (2-5pF): C = 2 * (Cload - Cstray)
+- Based on the application circuit
+# Antenna Impedance matching and SMA connector
+- We have 3 inductors, 4 capacitors, one SMA connector
+- The chip will have a certain output impedance say, 1kHz, we need to match this with 50 Ohms since antennas generally have 50 Ohms resistance.
+- We have a differential ouptut from the board, but we have a single antenna (so even the network converts the antenna into a differential pair)
+# Assigning footprints to the components
+- Since, we are making a small board, we will be using 0402 SMD size specs
+- Especially for the RF section, this is also mentioned in the datasheet
+- Anything that needs to handle more current or display more power, we will use 0603. Example: for LEDs, the bulk capacitor for the power section
+- 1206 is used for the fuse just in case it burns out, it can be easily replaced.
