@@ -50,3 +50,11 @@
 - Especially for the RF section, this is also mentioned in the datasheet
 - Anything that needs to handle more current or display more power, we will use 0603. Example: for LEDs, the bulk capacitor for the power section
 - 1206 is used for the fuse just in case it burns out, it can be easily replaced.
+- Assigned footprints to all of the components
+# PCB Designing
+- Place the critical components first: first localise circuitry then place the capacitors, resistors etc.
+- PCB Layout examples: refer to the datasheet, it will be given, transfer it to the board.
+- Fine tune the layout as much as you can, create the board outline roughly, then use the arc tool to make rounded corners
+# Layer Stack Up
+- Anything related to RF, you wanna use 4 layers.
+- 2 layers would mean your control impedance traces will bee very wide and you will have a lot of problems with decoupling capacitors and power planes and so on.
